@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.aic {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.index-body {
+  background: no-repeat url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  color: #FFF;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  padding-left: 5%;
+}
+header .logo, header .logo2, header .logo3, header .logo4 {
+  width: 10%;
+  border-radius: 50%;
+}
+header .line hr, header .line2 hr, header .line3 hr, header .line4 hr {
+  width: 30%;
+  size: 1px;
+  opacity: 0.2515;
+  background: #FFF;
+  position: absolute;
+  left: 15%;
+  z-index: 1;
+}
+header .navmenu, header .navmenu2, header .navmenu3, header .navmenu4 {
+  width: 60%;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40.7742271423px);
+  transition: 0.5s ease-in-out;
+}
+header .navmenu .burger, header .navmenu2 .burger, header .navmenu3 .burger, header .navmenu4 .burger {
+  display: none;
+}
+header .navmenu ul, header .navmenu2 ul, header .navmenu3 ul, header .navmenu4 ul {
+  width: 100%;
+}
+header .navmenu li, header .navmenu2 li, header .navmenu3 li, header .navmenu4 li {
+  list-style: none;
+}
+header .navmenu li:active, header .navmenu2 li:active, header .navmenu3 li:active, header .navmenu4 li:active {
+  text-decoration: underline #FFF;
+  text-underline-offset: 37px;
+}
+header .navmenu li:hover, header .navmenu2 li:hover, header .navmenu3 li:hover, header .navmenu4 li:hover {
+  text-decoration: underline 3px #FFF;
+  text-underline-offset: 37px;
+}
+header .navmenu a, header .navmenu2 a, header .navmenu3 a, header .navmenu4 a {
+  color: #FFF;
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+}
+.container .text-contain {
+  width: 50%;
+  height: 100%;
+}
+.container .text-contain h5 {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.container .text-contain h1 {
+  color: #FFF;
+  font-family: "Bellefair";
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.container .text-contain .txt {
+  width: 50%;
+  height: 30%;
+}
+.container .text-contain .txt p {
+  color: #D0D6F9;
+  font-family: "Barlow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: justify;
+}
+.container .explor-contain {
+  width: 50%;
+  height: 100%;
+}
+.container .explor-contain .explor {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10%;
+}
+.container .explor-contain .explor span {
+  color: #0B0D17;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.container .explor-contain .explor .explor:hover {
+  box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.262745098);
+}
+
+.destination-body {
+  background: no-repeat url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  color: #FFF;
+}
+.destination-body .subtitle {
+  width: 45%;
+  height: 10%;
+}
+.destination-body .subtitle p {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  position: relative;
+  left: 10%;
+  text-transform: uppercase;
+}
+.destination-body .subtitle p b {
+  color: #a5a4a4;
+}
+.destination-body .container2 {
+  width: 100%;
+  height: 70%;
+}
+.destination-body .container2 .left-container {
+  width: 50%;
+  height: 100%;
+}
+.destination-body .container2 .right-container {
+  width: 50%;
+  height: 100%;
+}
+.destination-body .container2 .right-container ul {
+  width: 50%;
+}
+.destination-body .container2 .right-container li {
+  list-style: none;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container li a {
+  color: #D0D6F9;
+  text-decoration: none;
+}
+.destination-body .container2 .right-container li:hover {
+  text-decoration: underline 3px #FFF;
+  text-underline-offset: 10px;
+}
+.destination-body .container2 .right-container h1 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container p {
+  color: #D0D6F9;
+  font-family: "Barlow";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.destination-body .container2 .right-container .down {
+  width: 60%;
+  height: 30%;
+}
+.destination-body .container2 .right-container .downbox {
+  width: 80%;
+}
+.destination-body .container2 .right-container hr {
+  width: 100%;
+  size: 1px;
+  opacity: 0.2515;
+  background: #383B4B;
+}
+.destination-body .container2 .right-container span {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container h4 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crew-body {
+  background: no-repeat url("../assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  width: 100%;
+  color: #FFF;
+}
+.crew-body .container3 {
+  width: 100%;
+  height: 78%;
+}
+.crew-body .container3 .textcrew-container {
+  width: 55%;
+  height: 100%;
+}
+.crew-body .container3 .textcrew-container .TitleH4 {
+  width: 65%;
+  height: 10%;
+}
+.crew-body .container3 .textcrew-container .TitleH4 h4 {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.crew-body .container3 .textcrew-container .TitleH4 h4 b {
+  color: #a5a4a4;
+}
+.crew-body .container3 .textcrew-container .txtContain {
+  width: 80%;
+  height: 60%;
+  margin-left: 10%;
+}
+.crew-body .container3 .textcrew-container .txtContain h3 {
+  color: #a5a4a4;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.crew-body .container3 .textcrew-container .txtContain h2 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.crew-body .container3 .textcrew-container .txtContain p {
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.crew-body .container3 .textcrew-container .dots {
+  width: 65%;
+  height: 10%;
+  gap: 25px;
+}
+.crew-body .container3 .textcrew-container .dots a {
+  text-decoration: none;
+}
+.crew-body .container3 .textcrew-container .dots .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(165, 164, 164, 0.3882352941);
+}
+.crew-body .container3 .textcrew-container .dots .dot1 {
+  background-color: #FFF;
+}
+.crew-body .container3 .imgcrew-container {
+  width: 45%;
+  height: 100%;
+}
+.crew-body .container3 .imgcrew-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.technovehi-body {
+  background: no-repeat url("../assets/technology/background-technology-desktop.jpg");
+  background-size: cover;
+  width: 100%;
+  color: #FFF;
+}
+.technovehi-body .TitleH4 {
+  width: 50%;
+  height: 10%;
+}
+.technovehi-body .TitleH4 h4 {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.technovehi-body .TitleH4 h4 b {
+  color: #a5a4a4;
+}
+.technovehi-body .container4 {
+  width: 100%;
+  height: 70%;
+}
+.technovehi-body .lauch-desc {
+  width: 60%;
+  height: 100%;
+}
+.technovehi-body .lauch-desc .numberboxers {
+  width: 20%;
+  height: 55%;
+}
+.technovehi-body .lauch-desc .numberboxers a {
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.technovehi-body .lauch-desc .numberboxers a .numerbox {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.technovehi-body .lauch-desc .numberboxers .nb1 {
+  background-color: #FFF;
+  color: #0B0D17;
+  border: none;
+}
+.technovehi-body .lauch-desc .text-box {
+  width: 60%;
+  height: 55%;
+  margin-left: 5%;
+}
+.technovehi-body .lauch-desc .text-box span {
+  list-style: none;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.technovehi-body .lauch-desc .text-box h2 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+}
+.technovehi-body .lauch-desc .text-box p {
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.technovehi-body .rocket-img {
+  width: 40%;
+  height: 100%;
+}
+.technovehi-body .rocket-img img {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+}
+
+/*# sourceMappingURL=desktop-style.css.map */
